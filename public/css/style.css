@@ -242,9 +242,10 @@ article {
 }
 
 .copyright {
-  text-align: left;
   margin-top: 25px;
   color: #666;
+  width: 100%;
+  text-align: center;
 }
 
 .article-container {
@@ -262,7 +263,6 @@ body.body-consulta-producto h1 {
   max-width: 1200px;
 }
 
-body.body-consulta-producto header,
 body.body-consulta-producto main,
 body.body-consulta-producto footer {
   padding: 15px;
@@ -301,7 +301,7 @@ body.body-consulta-producto footer {
 }
 
 /* register & login */
-#form_register, #form_login {
+#form_register, #form_login, #form-consulta-producto {
   background-color: #ebebeb;
   padding: 40px;
   width:  80%;
@@ -310,13 +310,13 @@ body.body-consulta-producto footer {
   font-size: 1.5rem;
 }
 
-#form_register div, #form_login div {
+#form_register div, #form_login div, #form-consulta-producto div {
   margin-bottom: 20px;
   border-bottom: 1px solid white;
   padding-bottom: 20px;
 }
 
-#form_register label, #form_login label{
+#form_register label, #form_login label, #form-consulta-producto label{
   font-size: 1.6rem;
   min-width: 15%;
   display: inline-block;
@@ -330,13 +330,17 @@ body.body-consulta-producto footer {
 
 }
 
-#form_register button, #form_login button{
+#form_register button, #form_login button, #form-consulta-producto button{
   padding: 10px 20px;
   margin-right: 10px;
   border: none;
   border-radius: 4px;
   outline: 0;
   background-color: #eac926;
+}
+
+#form_register, #form_login, #form-consulta-producto{
+  margin-top: 30px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -351,6 +355,10 @@ body.body-consulta-producto footer {
   
   .banner{
     margin-top: 205px;
+  }
+
+  .body-login, .body-register, .body-consulta-producto{
+    padding-top: 205px;
   }
 }
 
@@ -406,6 +414,18 @@ body.body-consulta-producto footer {
   .banner{
     margin-top: 198px;
   }
+  .body-login, .body-register, .body-consulta-producto{
+    padding-top: 198px;
+  }
+
+  footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .footer-column{
+    width: 33%;
+  }
 
 }
 
@@ -417,10 +437,13 @@ body.body-consulta-producto footer {
   .banner{
     margin-top: 167px;
   }
-
-  footer{
-    display: flex;
+  .body-login, .body-register, .body-consulta-producto{
+    padding-top: 167px;
   }
+
+  /* footer{
+    display: flex;
+  } */
 }
 
 @media (min-width: 1200px) {
@@ -440,5 +463,8 @@ body.body-consulta-producto footer {
 
   .banner{
     margin-top: 183px;
+  }
+  .body-login, .body-register, .body-consulta-producto{
+    padding-top: 183px;
   }
 }
